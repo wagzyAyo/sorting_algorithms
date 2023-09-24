@@ -8,12 +8,13 @@
 
 void insertion_sort_list(listint_t **list)
 {
+	listint_t *curr = (*list)->next;
+	listint_t  *tmp, *prev;
+
+
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
-		return;
+                return;
 
-	listint_t *curr, *tmp, *prev;
-
-	curr = (*list)->next;
 
 	while (curr != NULL)
 	{
