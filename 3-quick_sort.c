@@ -18,9 +18,9 @@ void quickSort(int *array, int low, int high, int size)
 		y = high;
 		for (a = low; a < high; a++)
 		{
-			if (array[a] < array[x])
+			if (array[a] < array[y])
 			{
-				if (a != y)
+				if (a != x)
 				{
 					tmp = array[a];
 					array[a] = array[x];
@@ -56,5 +56,5 @@ void quick_sort(int *array, size_t size)
 		return;
 
 
-	quickSort(array, 0, size -1, size)
+	quickSort(array, 0, size -1, size);
 }
